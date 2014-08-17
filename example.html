@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MouseTrap Example</title>
+	<script type="text/javascript" src="mousetrap.js"></script>
+	<script type="text/javascript">
+	Mousetrap.stopCallback = function() {
+		return false;
+	};
+
+	Mousetrap.bind('ctrl+space', function() {
+		alert("BOOM!");
+	});
+	</script>
+</head>
+<body>
+	<h1>:-)</h1>
+	<textarea name="classTest" id="classTest" cols="30" rows="10"></textarea>
+</body>
+</html>
