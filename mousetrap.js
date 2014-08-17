@@ -872,6 +872,18 @@
         },
 
         /**
+         * binds key events to the desired element
+         *
+         * @param {Element} element
+         * @returns void
+         */
+         bindEventsTo: function(element) {
+            _addEvent(element, 'keypress', _handleKeyEvent);            
+            _addEvent(element, 'keydown', _handleKeyEvent);            
+            _addEvent(element, 'keyup', _handleKeyEvent);            
+         },
+
+        /**
          * unbinds an event to mousetrap
          *
          * the unbinding sets the callback function of the specified key combo
